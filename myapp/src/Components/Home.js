@@ -51,7 +51,9 @@ export default function Home() {
         <Link to="/result"><button className="button-g" onClick={() => increaseCount(9, "p")}>9</button></Link>
         <Link to="/result"><button className="button-g" onClick={() => increaseCount(10, "p")}>10</button></Link>
         <br></br>
+        <p className='h3'>Never</p> <p className='h3-2'>Absolutely</p>
         </div>
+        
     </div>
   )
 }

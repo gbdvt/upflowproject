@@ -64,3 +64,16 @@
     border: 3px solid lightblue;
     padding: 100px;
 }
+
+.h1-type {
+    font-size: 40px;
+}
+
+.h3 {
+    float: left;
+    font-size: 30px;
+}
+.h3-2 {
+    float: right;
+    font-size: 30px;
+}
