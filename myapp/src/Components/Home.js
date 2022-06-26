@@ -1,5 +1,7 @@
+import './Home.css'
 import React from 'react'
 import {Link} from 'react-router-dom'
+
 
 export default function Home() {  
 
@@ -11,7 +13,7 @@ export default function Home() {
   localStorage.setItem('total', nClicks)
 
   // Total Values
-  const nTotal = Number(localStorage.getItem('totalvalue'));
+  const nTotal = Number(localStorage.getItem('totalvalue'));  
   localStorage.setItem('totalvalue', nTotal)
 
   // Total Promoters
@@ -34,21 +36,22 @@ export default function Home() {
   }
 
   return (
-    <div>
-        <h1>On a scale from 1 (never) to 10 (absolutely), how would you recommend X to a friend?</h1>
-        <Link to="/result"><button onClick={() => increaseCount(1, "d")}>1</button></Link>  
-        <Link to="/result"><button onClick={() => increaseCount(2, "d")}>2</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(3, "d")}>3</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(4, "d")}>4</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(5, "d")}>5</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(6, "d")}>6</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(7, "ps")}>7</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(8, "ps")}>8</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(9, "p")}>9</button></Link>
-        <Link to="/result"><button onClick={() => increaseCount(10, "p")}>10</button></Link>
+    <div >
+      <h1 className='h1-type' >On a scale from 1 (never) to 10 (absolutely), how would you recommend Upflow to a friend?</h1>
+      <div class="buttons">
+        
+        <Link to="/result"><button className="button-r" onClick={() => increaseCount(1, "d")}>1</button></Link>  
+        <Link to="/result"><button className="button-r" onClick={() => increaseCount(2, "d")}>2</button></Link>
+        <Link to="/result"><button className="button-r" onClick={() => increaseCount(3, "d")}>3</button></Link>
+        <Link to="/result"><button className="button-r" onClick={() => increaseCount(4, "d")}>4</button></Link>
+        <Link to="/result"><button className="button-r" onClick={() => increaseCount(5, "d")}>5</button></Link>
+        <Link to="/result"><button className="button-r" onClick={() => increaseCount(6, "d")}>6</button></Link>
+        <Link to="/result"><button className="button-y" onClick={() => increaseCount(7, "ps")}>7</button></Link>
+        <Link to="/result"><button className="button-y" onClick={() => increaseCount(8, "ps")}>8</button></Link>
+        <Link to="/result"><button className="button-g" onClick={() => increaseCount(9, "p")}>9</button></Link>
+        <Link to="/result"><button className="button-g" onClick={() => increaseCount(10, "p")}>10</button></Link>
         <br></br>
-        <p id="showCounts"></p>
-        <Link to="/result">Submit</Link>
+        </div>
     </div>
   )
 }

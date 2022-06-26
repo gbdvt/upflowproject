@@ -1,0 +1,66 @@
+.button-r {
+
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 25px 36px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: red;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+    margin-right: 10px;
+}
+.button-y {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 25px 36px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #ffcc00;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+    margin-right: 10px;
+}
+.button-g {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 25px 36px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: green;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+    margin-right: 10px;
+}
+
+.buttons {
+    margin-top: 100px;
+    margin-left: 125px;
+    width: 75%;
+    border: 3px solid lightblue;
+    padding: 100px;
+}
