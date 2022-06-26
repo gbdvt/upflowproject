@@ -37,7 +37,8 @@ export default function Home() {
 
   return (
     <div >
-      <h1 className='h1-type' >On a scale from 1 (never) to 10 (absolutely), how would you recommend Upflow to a friend?</h1>
+      
+      <h1 className='h1-type' >How would you recommend Upflow to a friend? (1-10)</h1>
       <div class="buttons">
         
         <Link to="/result"><button className="button-r" onClick={() => increaseCount(1, "d")}>1</button></Link>  
@@ -53,6 +54,7 @@ export default function Home() {
         <br></br>
         <p className='h3'>Never</p> <p className='h3-2'>Absolutely</p>
         </div>
+        <Link to="/skip"><button className='button-b'>Skip</button></Link>
         
     </div>
   )

@@ -1,0 +1,48 @@
+.button {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 25px 36px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #000000;
+    background-color: rgb(238, 186, 134);
+    transition-property: color, background-color, border-color;
+    margin-right: 1775px;
+}
+
+.h1 {
+    font-size: 60px;
+}
+
+.h2 {
+    font-size: 35px;
+    margin-right: 0;
+    color: rgb(112, 112, 112);
+}
+
+.nPeople {
+    color: red;
+}
+
+.av {
+    border-style: solid;
+    background-color: rgb(184, 248, 173);
+    float: left;
+    width: 25%;
+    margin-left: 465px;
+}
+.nps {
+    border-style: solid;
+    background-color: rgb(207, 247, 134);
+    overflow: hidden;
+    width: 25%;
+}
+
+.data {
+    overflow: hidden;
+}

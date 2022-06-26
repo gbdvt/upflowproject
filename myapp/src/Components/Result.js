@@ -1,3 +1,4 @@
+import './Result.css'
 import React from 'react'
 import {Link} from 'react-router-dom'
 export default function Result() {
@@ -5,16 +6,23 @@ export default function Result() {
   var y = localStorage.getItem('totalvalue')
   var d = localStorage.getItem('totaldetractors')
   var p = localStorage.getItem('totalpromoters')
-  var nps = (p-d)/x
+  var average = (y/x).toFixed(2);
+  var nps = (((p-d)/x)*100).toFixed(2);
 
   
 
   return (
     <div>
-        <h1>Result for {x} people.</h1>
-        <h1>Average: {y/x}</h1>
-        <h1>NPS : {nps*100}</h1>
-        <Link to="/">Home</Link>
+      <Link to="/"><button className='button'>Home</button></Link>
+        <h1 className='h1'>Result for <span className='nPeople'>{x}</span> people:</h1>
+        <div className='data'>
+          <div className='av'>
+            <h2 className='h2'>Average: {average}</h2>
+          </div>
+          <div className='nps'>
+            <h2 className='h2'>NPS : {nps}</h2>
+          </div>
+        </div>
     </div>
   )
 }
