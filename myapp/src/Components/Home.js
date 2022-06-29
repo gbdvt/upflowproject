@@ -5,8 +5,12 @@ import {Link} from 'react-router-dom'
 
 export default function Home() {  
 
-  /*   localStorage.setItem("total","0");
-    localStorage.setItem("totalvalue","0");  */
+  // À ajouter pour reset stockage local
+    /* localStorage.setItem("total","0");
+    localStorage.setItem("totalvalue","0");  
+    localStorage.setItem("totalvalue","0");  
+    localStorage.setItem("totalpromoters","0");  
+    localStorage.setItem("totaldetractors","0");   */
 
   // Total Clicks
   const nClicks = Number(localStorage.getItem('total'));
